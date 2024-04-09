@@ -1,0 +1,7 @@
+import { defineAsyncComponent } from 'vue'
+
+export default {
+  enhance: ({ app }) => {    
+      app.component("Icons", defineAsyncComponent(() => import("/Users/SnowyCN/Documents/Projects/rtx-icons/docs/.vuepress/components/Icons.vue")))
+  },
+}
