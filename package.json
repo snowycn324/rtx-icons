@@ -1,6 +1,5 @@
 {
-  "name": "rtx-icons",
-  "private": true,
+  "name": "@rtx/icons",
   "version": "0.0.1",
   "main": "dist/rtx-icons.es.js",
   "description": "Rtx icons library from Rakuten Travel Xchange Custom Site Team.",
@@ -13,15 +12,15 @@
     "docs:build": "vuepress build docs",
     "preview": "vite preview"
   },
-  "author": "snowycn324@gmail.com",
+  "author": "yufeng.wu@rakutentravelxchange.com",
   "keywords": [
     "icons",
     "rtx"
   ],
   "license": "MIT",
   "files": [
-    "src/*",
-    "dist/*"
+    "dist/*",
+    "src/*"
   ],
   "devDependencies": {
     "@types/node": "^20.12.5",
@@ -29,6 +28,7 @@
     "@vuepress/bundler-vite": "2.0.0-rc.9",
     "@vuepress/plugin-register-components": "2.0.0-rc.21",
     "@vuepress/theme-default": "2.0.0-rc.24",
+    "terser": "^5.31.1",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
     "vue": "^3.4.21",

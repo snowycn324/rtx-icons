@@ -3,7 +3,7 @@ import Close from './Close.vue';
 
 export const ClosePlugin = {
   install(app: App) {
-    app.component('rtx-add', Close);
+    app.component('rtx-close', Close);
   },
 };
 

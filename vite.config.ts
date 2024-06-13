@@ -11,4 +11,7 @@ export default defineConfig({
 			"@icons": path.resolve(__dirname, "src/icons"),
 		},
 	},
+	build: {
+		minify: "terser",
+	},
 })

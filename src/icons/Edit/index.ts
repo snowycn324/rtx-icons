@@ -3,7 +3,7 @@ import Edit from './Edit.vue';
 
 export const EditPlugin = {
   install(app: App) {
-    app.component('rtx-add', Edit);
+    app.component('rtx-edit', Edit);
   },
 };
 
