@@ -17,6 +17,7 @@ import { markRaw } from "vue"
 import { Add } from "../../../src/icons/Add"
 import { Close } from "../../../src/icons/Close"
 import { Edit } from "../../../src/icons/Edit"
+import { Left } from "../../../src/icons/Left"
 
 export default {
   name: "Icons",
@@ -36,7 +37,11 @@ export default {
         {
           name: "rtx-edit",
           icon: markRaw(Edit),
-        }
+        },
+        {
+          name: "rtx-left",
+          icon: markRaw(Left),
+        },
       ]
     }
   },
