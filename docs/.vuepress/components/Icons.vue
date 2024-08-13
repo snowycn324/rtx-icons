@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <div class="top-menu">
       <input v-model="searchKeyword" class="search-input" placeholder="Input icon name to search" />
       <pick-colors v-model:value="pureColor"/>
@@ -18,6 +18,21 @@ import { Add } from "../../../src/icons/Add"
 import { Close } from "../../../src/icons/Close"
 import { Edit } from "../../../src/icons/Edit"
 import { Left } from "../../../src/icons/Left"
+import { Back } from "../../../src/icons/Back"
+import { Chain } from "../../../src/icons/Chain"
+import { Copy } from "../../../src/icons/Copy"
+import { Delete } from "../../../src/icons/Delete"
+import { Demap } from "../../../src/icons/Demap"
+import { Down } from "../../../src/icons/Down"
+import { Download } from "../../../src/icons/Download"
+import { Hamburger } from "../../../src/icons/Hamburger"
+import { Remap } from "../../../src/icons/Remap"
+import { Right } from "../../../src/icons/Right"
+
+import { Search } from "../../../src/icons/Search"
+import { Trigger } from "../../../src/icons/Trigger"
+import { Up } from "../../../src/icons/Up"
+import { Updater } from "../../../src/icons/Updater"
 
 export default {
   name: "Icons",
@@ -42,6 +57,62 @@ export default {
           name: "rtx-left",
           icon: markRaw(Left),
         },
+        {
+          name: "rtx-back",
+          icon: markRaw(Back),
+        },
+        {
+          name: "rtx-chain",
+          icon: markRaw(Chain),
+        },
+        {
+          name: "rtx-copy",
+          icon: markRaw(Copy),
+        },
+        {
+          name: "rtx-delete",
+          icon: markRaw(Delete),
+        },
+        {
+          name: "rtx-demap",
+          icon: markRaw(Demap),
+        },
+        {
+          name: "rtx-down",
+          icon: markRaw(Down),
+        },
+        {
+          name: "rtx-download",
+          icon: markRaw(Download),
+        },
+        {
+          name: "rtx-hamburger",
+          icon: markRaw(Hamburger),
+        },
+        {
+          name: "rtx-remap",
+          icon: markRaw(Remap),
+        },
+        {
+          name: "rtx-right",
+          icon: markRaw(Right),
+        },
+        {
+          name: "rtx-search",
+          icon: markRaw(Search),
+        },
+        {
+          name: "rtx-trigger",
+          icon: markRaw(Trigger),
+        },
+        {
+          name: "rtx-up",
+          icon: markRaw(Up),
+        },
+        {
+          name: "rtx-updater",
+          icon: markRaw(Updater),
+        },
       ]
     }
   },
@@ -59,9 +130,14 @@ export default {
 </script>
 
 <style>
+.container {
+  min-height: 450px;
+}
+
 .top-menu {
   display: flex;
   align-items: center;
+  justify-items: center;
   margin-top: 30px;
 }
 

@@ -1,7 +1,4 @@
 import {
-  setupDevtoolsPlugin
-} from "./chunk-BAIHGESP.js";
-import {
   computed,
   defineComponent,
   getCurrentInstance,
@@ -19,9 +16,12 @@ import {
   unref,
   watch,
   watchEffect
-} from "./chunk-TUPQSV62.js";
+} from "./chunk-MHLQE6UP.js";
+import {
+  setupDevtoolsPlugin
+} from "./chunk-D2YVLGJ5.js";
 
-// node_modules/.pnpm/vue-router@4.3.0_vue@3.4.21/node_modules/vue-router/dist/vue-router.mjs
+// node_modules/.pnpm/vue-router@4.3.3_vue@3.4.29_typescript@5.4.5_/node_modules/vue-router/dist/vue-router.mjs
 var isBrowser = typeof document !== "undefined";
 function isESModule(obj) {
   return obj.__esModule || obj[Symbol.toStringTag] === "Module";
@@ -988,6 +988,9 @@ function createRouterMatcher(routes, globalOptions) {
         if (isRootAdd && record.name && !isAliasRecord(matcher))
           removeRoute(record.name);
       }
+      if (isMatchable(matcher)) {
+        insertMatcher(matcher);
+      }
       if (mainNormalizedRecord.children) {
         const children = mainNormalizedRecord.children;
         for (let i = 0; i < children.length; i++) {
@@ -995,9 +998,6 @@ function createRouterMatcher(routes, globalOptions) {
         }
       }
       originalRecord = originalRecord || matcher;
-      if (matcher.record.components && Object.keys(matcher.record.components).length || matcher.record.name || matcher.record.redirect) {
-        insertMatcher(matcher);
-      }
     }
     return originalMatcher ? () => {
       removeRoute(originalMatcher);
@@ -1027,12 +1027,8 @@ function createRouterMatcher(routes, globalOptions) {
     return matchers;
   }
   function insertMatcher(matcher) {
-    let i = 0;
-    while (i < matchers.length && comparePathParserScore(matcher, matchers[i]) >= 0 && // Adding children with empty path should still appear before the parent
-    // https://github.com/vuejs/router/issues/1124
-    (matcher.record.path !== matchers[i].record.path || !isRecordChildOf(matcher, matchers[i])))
-      i++;
-    matchers.splice(i, 0, matcher);
+    const index = findInsertionIndex(matcher, matchers);
+    matchers.splice(index, 0, matcher);
     if (matcher.record.name && !isAliasRecord(matcher))
       matcherMap.set(matcher.record.name, matcher);
   }
@@ -1183,8 +1179,38 @@ function checkMissingParamsInAbsolutePath(record, parent) {
       return warn(`Absolute path "${record.record.path}" must have the exact same param named "${key.name}" as its parent "${parent.record.path}".`);
   }
 }
-function isRecordChildOf(record, parent) {
-  return parent.children.some((child) => child === record || isRecordChildOf(record, child));
+function findInsertionIndex(matcher, matchers) {
+  let lower = 0;
+  let upper = matchers.length;
+  while (lower !== upper) {
+    const mid = lower + upper >> 1;
+    const sortOrder = comparePathParserScore(matcher, matchers[mid]);
+    if (sortOrder < 0) {
+      upper = mid;
+    } else {
+      lower = mid + 1;
+    }
+  }
+  const insertionAncestor = getInsertionAncestor(matcher);
+  if (insertionAncestor) {
+    upper = matchers.lastIndexOf(insertionAncestor, upper - 1);
+    if (upper < 0) {
+      warn(`Finding ancestor route "${insertionAncestor.record.path}" failed for "${matcher.record.path}"`);
+    }
+  }
+  return upper;
+}
+function getInsertionAncestor(matcher) {
+  let ancestor = matcher;
+  while (ancestor = ancestor.parent) {
+    if (isMatchable(ancestor) && comparePathParserScore(matcher, ancestor) === 0) {
+      return ancestor;
+    }
+  }
+  return;
+}
+function isMatchable({ record }) {
+  return !!(record.name || record.components && Object.keys(record.components).length || record.redirect);
 }
 function parseQuery(search) {
   const query = {};
@@ -1439,7 +1465,28 @@ function loadRouteLocation(route) {
 function useLink(props) {
   const router = inject(routerKey);
   const currentRoute = inject(routeLocationKey);
-  const route = computed(() => router.resolve(unref(props.to)));
+  let hasPrevious = false;
+  let previousTo = null;
+  const route = computed(() => {
+    const to = unref(props.to);
+    if (!hasPrevious || to !== previousTo) {
+      if (!isRouteLocation(to)) {
+        if (hasPrevious) {
+          warn(`Invalid value for prop "to" in useLink()
+- to:`, to, `
+- previous to:`, previousTo, `
+- props:`, props);
+        } else {
+          warn(`Invalid value for prop "to" in useLink()
+- to:`, to, `
+- props:`, props);
+        }
+      }
+      previousTo = to;
+      hasPrevious = true;
+    }
+    return router.resolve(to);
+  });
   const activeRecordIndex = computed(() => {
     const { matched } = route.value;
     const { length } = matched;
@@ -1477,7 +1524,8 @@ function useLink(props) {
       const linkContextDevtools = {
         route: route.value,
         isActive: isActive.value,
-        isExactActive: isExactActive.value
+        isExactActive: isExactActive.value,
+        error: null
       };
       instance.__vrl_devtools = instance.__vrl_devtools || [];
       instance.__vrl_devtools.push(linkContextDevtools);
@@ -1485,6 +1533,7 @@ function useLink(props) {
         linkContextDevtools.route = route.value;
         linkContextDevtools.isActive = isActive.value;
         linkContextDevtools.isExactActive = isExactActive.value;
+        linkContextDevtools.error = isRouteLocation(unref(props.to)) ? null : 'Invalid "to" value';
       }, { flush: "post" });
     }
   }
@@ -1751,9 +1800,15 @@ function addDevtools(app, router, matcher) {
       if (isArray(componentInstance.__vrl_devtools)) {
         componentInstance.__devtoolsApi = api;
         componentInstance.__vrl_devtools.forEach((devtoolsData) => {
+          let label = devtoolsData.route.path;
           let backgroundColor = ORANGE_400;
           let tooltip = "";
-          if (devtoolsData.isExactActive) {
+          let textColor = 0;
+          if (devtoolsData.error) {
+            label = devtoolsData.error;
+            backgroundColor = RED_100;
+            textColor = RED_700;
+          } else if (devtoolsData.isExactActive) {
             backgroundColor = LIME_500;
             tooltip = "This is exactly active";
           } else if (devtoolsData.isActive) {
@@ -1761,8 +1816,8 @@ function addDevtools(app, router, matcher) {
             tooltip = "This link is active";
           }
           node.tags.push({
-            label: devtoolsData.route.path,
-            textColor: 0,
+            label,
+            textColor,
             tooltip,
             backgroundColor
           });
@@ -1970,6 +2025,8 @@ var LIME_500 = 8702998;
 var CYAN_400 = 2282478;
 var ORANGE_400 = 16486972;
 var DARK = 6710886;
+var RED_100 = 16704226;
+var RED_700 = 12131356;
 function formatRouteRecordForInspector(route) {
   const tags = [];
   const { record } = route;
@@ -2101,6 +2158,9 @@ function createRouter(options) {
     let record;
     if (isRouteName(parentOrRoute)) {
       parent = matcher.getRecordMatcher(parentOrRoute);
+      if (!parent) {
+        warn(`Parent route "${String(parentOrRoute)}" not found when adding child route`, route);
+      }
       record = route;
     } else {
       record = parentOrRoute;
@@ -2140,6 +2200,11 @@ function createRouter(options) {
         redirectedFrom: void 0,
         href: href2
       });
+    }
+    if (!isRouteLocation(rawLocation)) {
+      warn(`router.resolve() was passed an invalid location. This will fail in production.
+- Location:`, rawLocation);
+      rawLocation = {};
     }
     let matcherLocation;
     if (rawLocation.path != null) {
@@ -2658,7 +2723,7 @@ export {
 
 vue-router/dist/vue-router.mjs:
   (*!
-    * vue-router v4.3.0
+    * vue-router v4.3.3
     * (c) 2024 Eduardo San Martin Morote
     * @license MIT
     *)

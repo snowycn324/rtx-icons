@@ -4,7 +4,7 @@ set -e
 
 #nvm
 source ~/.nvm/nvm.sh
-nvm use 16
+nvm use 20
 
 # build
 pnpm run docs:build
