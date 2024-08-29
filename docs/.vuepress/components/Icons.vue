@@ -4,9 +4,13 @@
       <input v-model="searchKeyword" class="search-input" placeholder="Input icon name to search" />
       <pick-colors v-model:value="pureColor"/>
     </div>
+    <div>
+      <VueSlider v-model="size" min="8" interval="1" max="30" />
+    </div>
     <ul class="icons-container">
       <li v-for="icon in displayedIconsList" :key="icon.name" class="icon-container">
-        <component :is="icon.icon" :color="pureColor" />
+        <component :is="icon.icon" :color="pureColor" :size="size" />
+        <span class="icon-label">{{ icon.name }}</span>
       </li>
     </ul>
   </div>
@@ -34,12 +38,18 @@ import { Trigger } from "../../../src/icons/Trigger"
 import { Up } from "../../../src/icons/Up"
 import { Updater } from "../../../src/icons/Updater"
 
+import VueSlider from "vue-3-slider-component";
+
 export default {
   name: "Icons",
+  components: {
+    VueSlider
+  },
   data() {
     return {
       pureColor: '#000000',
       searchKeyword: '',
+      size: 10,
       iconsList: [
         {
           name: "rtx-add",
@@ -125,13 +135,13 @@ export default {
     displayedIconsList(){
       return this.iconsList.filter((icon) => icon.name.includes(this.searchKeyword.trim()))
     }
-  }
+  },
 }
 </script>
 
 <style>
 .container {
-  min-height: 450px;
+  min-height: 500px;
 }
 
 .top-menu {
@@ -139,10 +149,14 @@ export default {
   align-items: center;
   justify-items: center;
   margin-top: 30px;
+  position: relative;
+  left: 55px;
+  margin-bottom: 20px;
 }
 
 ul,li {
   list-style: none;
+  /* padding: 0; */
 }
 
 .icons-container {
@@ -188,7 +202,13 @@ ul,li {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
+  flex-direction: column;
+  width: 120px;
+  height: 80px;
+}
+
+.icon-label {
+  font-size: 12px;
+  margin-top: 5px;
 }
 </style>

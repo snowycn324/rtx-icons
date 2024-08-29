@@ -13,9 +13,21 @@
 <span class="line"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">defineNuxtPlugin</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">nuxtApp</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span></span>
 <span class="line">  nuxtApp<span class="token punctuation">.</span>vueApp<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>RtxIconsPlugin<span class="token punctuation">)</span></span>
 <span class="line"><span class="token punctuation">}</span><span class="token punctuation">)</span></span>
+<span class="line"></span>
+<span class="line"><span class="token comment">// use in .vue files</span></span>
+<span class="line"><span class="token comment">// ...other codes</span></span>
+<span class="line"><span class="token operator">&lt;</span>template<span class="token operator">></span></span>
+<span class="line">  <span class="token operator">&lt;</span>div<span class="token operator">></span></span>
+<span class="line">    <span class="token doc-comment comment">/** props: color(String), size(Number) */</span></span>
+<span class="line">    <span class="token operator">&lt;</span>rtx<span class="token operator">-</span>add color<span class="token operator">=</span><span class="token string">"#fff"</span> <span class="token operator">:</span>size<span class="token operator">=</span><span class="token string">"20"</span> <span class="token operator">/</span><span class="token operator">></span></span>
+<span class="line">    <span class="token doc-comment comment">/** class: you can also use rtx-tailwindcss as class name to control it's color too */</span></span>
+<span class="line">    <span class="token doc-comment comment">/** https://snowycn324.github.io/tailwindcss-rtx/colors/ */</span></span>
+<span class="line">    <span class="token operator">&lt;</span>rtx<span class="token operator">-</span>edit <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"text-rtx-red-900"</span> <span class="token operator">:</span>size<span class="token operator">=</span><span class="token string">"20"</span> <span class="token operator">/</span><span class="token operator">></span></span>
+<span class="line">  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span></span>
+<span class="line"><span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">></span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="version" tabindex="-1"><a class="header-anchor" href="#version"><span>Version</span></a></h3>
-<p>Now the latest version of RTX-Icons is <code v-pre>0.0.1</code></p>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="version" tabindex="-1"><a class="header-anchor" href="#version"><span>Version</span></a></h3>
+<p>Now the latest version of RTX-Icons is <code v-pre>0.0.2</code></p>
 </div></template>
 
 
