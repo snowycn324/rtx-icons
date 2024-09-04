@@ -37,6 +37,6 @@
     "vuepress": "2.0.0-rc.14"
   },
   "dependencies": {
-    "vue-3-slider-component": "^1.0.0"
+    "vue-3-slider-component": "^1.0.1"
   }
 }

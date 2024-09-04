@@ -43,6 +43,7 @@ export default defineUserConfig({
       components: {
         Icons: path.resolve(__dirname, './components/Icons.vue'),
         PickColors: path.resolve(__dirname, '../../node_modules/vue-pick-colors'),
+        VueSlider: path.resolve(__dirname, '../../node_modules/vue-3-slider-component'),
       }
     }),
   ],

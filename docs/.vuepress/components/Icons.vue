@@ -2,14 +2,14 @@
   <div class="container">
     <div class="top-menu">
       <input v-model="searchKeyword" class="search-input" placeholder="Input icon name to search" />
-      <pick-colors v-model:value="pureColor"/>
+      <pick-colors v-model:value="pureColor"></pick-colors>
     </div>
     <div>
-      <VueSlider v-model="size" min="8" interval="1" max="30" />
+      <vue-slider v-model="size" min="8" interval="1" max="30"></vue-slider>
     </div>
     <ul class="icons-container">
       <li v-for="icon in displayedIconsList" :key="icon.name" class="icon-container">
-        <component :is="icon.icon" :color="pureColor" :size="size" />
+        <component class="icon-self" :is="icon.icon" :color="pureColor" :size="size"></component>
         <span class="icon-label">{{ icon.name }}</span>
       </li>
     </ul>
@@ -38,13 +38,8 @@ import { Trigger } from "../../../src/icons/Trigger"
 import { Up } from "../../../src/icons/Up"
 import { Updater } from "../../../src/icons/Updater"
 
-import VueSlider from "vue-3-slider-component";
-
 export default {
   name: "Icons",
-  components: {
-    VueSlider
-  },
   data() {
     return {
       pureColor: '#000000',
