@@ -38,6 +38,8 @@ import { Trigger } from "../../../src/icons/Trigger"
 import { Up } from "../../../src/icons/Up"
 import { Updater } from "../../../src/icons/Updater"
 
+import { Erase } from "../../../src/icons/Erase"
+
 export default {
   name: "Icons",
   data() {
@@ -117,6 +119,10 @@ export default {
         {
           name: "rtx-updater",
           icon: markRaw(Updater),
+        },
+        {
+          name: "rtx-erase",
+          icon: markRaw(Erase),
         },
       ]
     }

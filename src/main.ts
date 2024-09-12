@@ -17,6 +17,7 @@ import { UpPlugin } from '@icons/Up';
 import { TriggerPlugin } from '@icons/Trigger';
 import { DownloadPlugin } from '@icons/Download';
 import { UpdaterPlugin } from '@icons/Updater';
+import { ErasePlugin } from '@icons/Erase';
 
 const RtxIconsPlugin = {
   install: (app: App) => {
@@ -38,6 +39,7 @@ const RtxIconsPlugin = {
     app.use(TriggerPlugin);
     app.use(DownloadPlugin);
     app.use(UpdaterPlugin);
+    app.use(ErasePlugin);
   }
 }
 export default RtxIconsPlugin;

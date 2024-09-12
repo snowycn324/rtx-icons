@@ -49,7 +49,7 @@ const u = ["width", "height"], a = ["fill"], C = /* @__PURE__ */ n({
   install(o) {
     o.component("rtx-close", w);
   }
-}, g = ["width", "height"], v = ["fill"], m = /* @__PURE__ */ n({
+}, g = ["width", "height"], L = ["fill"], v = /* @__PURE__ */ n({
   __name: "Edit",
   props: {
     size: { default: 12 },
@@ -67,12 +67,12 @@ const u = ["width", "height"], a = ["fill"], C = /* @__PURE__ */ n({
       s("path", {
         d: "M0 9.50035V12H2.49965L9.87196 4.62769L7.37231 2.12804L0 9.50035ZM11.805 2.69463C12.065 2.43466 12.065 2.01472 11.805 1.75476L10.2452 0.194973C9.98528 -0.064991 9.56534 -0.064991 9.30537 0.194973L8.08554 1.4148L10.5852 3.91446L11.805 2.69463Z",
         fill: l.value
-      }, null, 8, v)
+      }, null, 8, L)
     ], 8, g));
   }
-}), L = {
+}), m = {
   install(o) {
-    o.component("rtx-edit", m);
+    o.component("rtx-edit", v);
   }
 }, H = ["width", "height", "fill"], z = ["fill"], $ = /* @__PURE__ */ n({
   __name: "Left",
@@ -145,11 +145,11 @@ const u = ["width", "height"], a = ["fill"], C = /* @__PURE__ */ n({
       }, null, 8, D)
     ], 8, P));
   }
-}), k = {
+}), E = {
   install(o) {
     o.component("rtx-back", b);
   }
-}, R = ["width", "height", "fill"], E = ["fill"], U = /* @__PURE__ */ n({
+}, k = ["width", "height", "fill"], R = ["fill"], U = /* @__PURE__ */ n({
   __name: "Search",
   props: {
     size: { default: 12 },
@@ -167,8 +167,8 @@ const u = ["width", "height"], a = ["fill"], C = /* @__PURE__ */ n({
       s("path", {
         d: "M8.57633 7.54717H8.03431L7.8422 7.36192C8.51458 6.57976 8.91938 5.56432 8.91938 4.45969C8.91938 1.99657 6.92281 0 4.45969 0C1.99657 0 0 1.99657 0 4.45969C0 6.92281 1.99657 8.91938 4.45969 8.91938C5.56432 8.91938 6.57976 8.51458 7.36192 7.8422L7.54717 8.03431V8.57633L10.9777 12L12 10.9777L8.57633 7.54717ZM4.45969 7.54717C2.75129 7.54717 1.37221 6.1681 1.37221 4.45969C1.37221 2.75129 2.75129 1.37221 4.45969 1.37221C6.1681 1.37221 7.54717 2.75129 7.54717 4.45969C7.54717 6.1681 6.1681 7.54717 4.45969 7.54717Z",
         fill: l.value
-      }, null, 8, E)
-    ], 8, R));
+      }, null, 8, R)
+    ], 8, k));
   }
 }), y = {
   install(o) {
@@ -378,7 +378,7 @@ const u = ["width", "height"], a = ["fill"], C = /* @__PURE__ */ n({
   install(o) {
     o.component("rtx-up", f1);
   }
-}, p1 = ["width", "height", "fill"], g1 = ["fill"], v1 = /* @__PURE__ */ n({
+}, p1 = ["width", "height", "fill"], g1 = ["fill"], L1 = /* @__PURE__ */ n({
   __name: "Trigger",
   props: {
     size: { default: 12 },
@@ -399,11 +399,11 @@ const u = ["width", "height"], a = ["fill"], C = /* @__PURE__ */ n({
       }, null, 8, g1)
     ], 8, p1));
   }
-}), m1 = {
+}), v1 = {
   install(o) {
-    o.component("rtx-trigger", v1);
+    o.component("rtx-trigger", L1);
   }
-}, L1 = ["width", "height", "fill"], H1 = ["fill"], z1 = /* @__PURE__ */ n({
+}, m1 = ["width", "height", "fill"], H1 = ["fill"], z1 = /* @__PURE__ */ n({
   __name: "Download",
   props: {
     size: { default: 12 },
@@ -422,7 +422,7 @@ const u = ["width", "height"], a = ["fill"], C = /* @__PURE__ */ n({
         d: "M9.88235 4.23529H7.05882V0H2.82353V4.23529H0L4.94118 9.17647L9.88235 4.23529ZM0 10.5882V12H9.88235V10.5882H0Z",
         fill: l.value
       }, null, 8, H1)
-    ], 8, L1));
+    ], 8, m1));
   }
 }), $1 = {
   install(o) {
@@ -453,11 +453,36 @@ const u = ["width", "height"], a = ["fill"], C = /* @__PURE__ */ n({
   install(o) {
     o.component("rtx-updater", M1);
   }
-}, P1 = {
+}, B1 = ["width", "height"], P1 = ["fill"], D1 = /* @__PURE__ */ n({
+  __name: "Erase",
+  props: {
+    size: { default: 12 },
+    color: {}
+  },
+  setup(o) {
+    const e = o, l = i(() => e.color || "currentColor");
+    return (t, h) => (r(), c("svg", {
+      width: t.size,
+      height: t.size * 0.92,
+      viewBox: "0 0 12 11",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg"
+    }, [
+      s("path", {
+        d: "M9.14468 9.01679H12V10.219H7.94245L9.14468 9.01679ZM1.6307 10.219L0.353317 8.94165C0.122888 8.71122 0.0051692 8.42569 0.000159872 8.08505C-0.00484945 7.74442 0.10786 7.45388 0.338289 7.21343L6.9506 0.360671C7.18103 0.120224 7.46406 0 7.79968 0C8.1353 0 8.41833 0.115214 8.64876 0.345643L11.6393 3.33621C11.8698 3.56664 11.985 3.85217 11.985 4.19281C11.985 4.53344 11.8698 4.81897 11.6393 5.0494L6.58993 10.219H1.6307ZM6.07898 9.01679L10.7978 4.17778L7.82222 1.20224L1.17986 8.055L2.14165 9.01679H6.07898Z",
+        fill: l.value
+      }, null, 8, P1)
+    ], 8, B1));
+  }
+}), b1 = {
+  install(o) {
+    o.component("rtx-erase", D1);
+  }
+}, k1 = {
   install: (o) => {
-    o.use(_), o.use(p), o.use(L), o.use(V), o.use(B), o.use(k), o.use(y), o.use(I), o.use(F), o.use(Q), o.use(o1), o.use(s1), o.use(c1), o.use(C1), o.use(w1), o.use(m1), o.use($1), o.use(Z1);
+    o.use(_), o.use(p), o.use(m), o.use(V), o.use(B), o.use(E), o.use(y), o.use(I), o.use(F), o.use(Q), o.use(o1), o.use(s1), o.use(c1), o.use(C1), o.use(w1), o.use(v1), o.use($1), o.use(Z1), o.use(b1);
   }
 };
 export {
-  P1 as default
+  k1 as default
 };

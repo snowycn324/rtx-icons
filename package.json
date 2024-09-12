@@ -1,6 +1,6 @@
 {
   "name": "@rtx/icons",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/rtx-icons.es.js",
   "description": "Rtx icons library from Rakuten Travel Xchange Custom Site Team.",
   "type": "module",
