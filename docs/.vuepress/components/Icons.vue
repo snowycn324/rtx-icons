@@ -29,16 +29,14 @@ import { Delete } from "../../../src/icons/Delete"
 import { Demap } from "../../../src/icons/Demap"
 import { Down } from "../../../src/icons/Down"
 import { Download } from "../../../src/icons/Download"
-import { Hamburger } from "../../../src/icons/Hamburger"
 import { Remap } from "../../../src/icons/Remap"
 import { Right } from "../../../src/icons/Right"
-
 import { Search } from "../../../src/icons/Search"
 import { Trigger } from "../../../src/icons/Trigger"
 import { Up } from "../../../src/icons/Up"
 import { Updater } from "../../../src/icons/Updater"
-
 import { Erase } from "../../../src/icons/Erase"
+import { Menu } from "../../../src/icons/Menu"
 
 export default {
   name: "Icons",
@@ -93,10 +91,6 @@ export default {
           icon: markRaw(Download),
         },
         {
-          name: "rtx-hamburger",
-          icon: markRaw(Hamburger),
-        },
-        {
           name: "rtx-remap",
           icon: markRaw(Remap),
         },
@@ -123,6 +117,10 @@ export default {
         {
           name: "rtx-erase",
           icon: markRaw(Erase),
+        },
+        {
+          name: "rtx-menu",
+          icon: markRaw(Menu),
         },
       ]
     }

@@ -3,7 +3,6 @@ import { AddPlugin } from '@icons/Add';
 import { ClosePlugin } from '@icons/Close';
 import { EditPlugin } from '@icons/Edit';
 import { LeftPlugin } from '@icons/Left';
-import { HamburgerPlugin } from '@icons/Hamburger';
 import { BackPlugin } from '@icons/Back';
 import { SearchPlugin } from '@icons/Search';
 import { DemapPlugin } from '@icons/Demap';
@@ -18,6 +17,7 @@ import { TriggerPlugin } from '@icons/Trigger';
 import { DownloadPlugin } from '@icons/Download';
 import { UpdaterPlugin } from '@icons/Updater';
 import { ErasePlugin } from '@icons/Erase';
+import { MenuPlugin } from '@icons/Menu';
 
 const RtxIconsPlugin = {
   install: (app: App) => {
@@ -25,7 +25,6 @@ const RtxIconsPlugin = {
     app.use(ClosePlugin);
     app.use(EditPlugin);
     app.use(LeftPlugin);
-    app.use(HamburgerPlugin);
     app.use(BackPlugin);
     app.use(SearchPlugin);
     app.use(DemapPlugin);
@@ -40,6 +39,7 @@ const RtxIconsPlugin = {
     app.use(DownloadPlugin);
     app.use(UpdaterPlugin);
     app.use(ErasePlugin);
+    app.use(MenuPlugin);
   }
 }
 export default RtxIconsPlugin;
