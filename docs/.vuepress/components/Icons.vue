@@ -9,7 +9,9 @@
     </div>
     <ul class="icons-container">
       <li v-for="icon in displayedIconsList" :key="icon.name" class="icon-container">
-        <component class="icon-self" :is="icon.icon" :color="pureColor" :size="size"></component>
+        <div :style="{ width: `${size}px`, height: `${size}px` }" class="icon-box">
+          <component class="icon-self" :is="icon.icon" :color="pureColor" :size="size"></component>
+        </div>
         <span class="icon-label">{{ icon.name }}</span>
       </li>
     </ul>
@@ -239,6 +241,12 @@ ul,li {
   flex-direction: column;
   width: 120px;
   height: 80px;
+}
+
+.icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon-label {
