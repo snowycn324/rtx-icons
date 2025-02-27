@@ -37,6 +37,13 @@ import { Up } from "../../../src/icons/Up"
 import { Updater } from "../../../src/icons/Updater"
 import { Erase } from "../../../src/icons/Erase"
 import { Menu } from "../../../src/icons/Menu"
+import { Compare } from "../../../src/icons/Compare"
+import { User } from "../../../src/icons/User"
+import { Calendar } from "../../../src/icons/Calendar"
+import { Apply } from "../../../src/icons/Apply"
+import { Minus } from "../../../src/icons/Minus"
+import { Print } from "../../../src/icons/Print"
+import { Info } from "../../../src/icons/Info"
 
 export default {
   name: "Icons",
@@ -121,6 +128,34 @@ export default {
         {
           name: "rtx-menu",
           icon: markRaw(Menu),
+        },
+        {
+          name: "rtx-compare",
+          icon: markRaw(Compare),
+        },
+        {
+          name: "rtx-user",
+          icon: markRaw(User),
+        },
+        {
+          name: "rtx-calendar",
+          icon: markRaw(Calendar),
+        },
+        {
+          name: "rtx-apply",
+          icon: markRaw(Apply),
+        },
+        {
+          name: "rtx-minus",
+          icon: markRaw(Minus),
+        },
+        {
+          name: "rtx-print",
+          icon: markRaw(Print),
+        },
+        {
+          name: "rtx-info",
+          icon: markRaw(Info),
         },
       ]
     }

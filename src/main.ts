@@ -18,6 +18,13 @@ import { DownloadPlugin } from '@icons/Download';
 import { UpdaterPlugin } from '@icons/Updater';
 import { ErasePlugin } from '@icons/Erase';
 import { MenuPlugin } from '@icons/Menu';
+import { ComparePlugin } from '@icons/Compare';
+import { UserPlugin } from '@icons/User';
+import { CalendarPlugin } from '@icons/Calendar';
+import { ApplyPlugin } from '@icons/Apply';
+import { MinusPlugin } from '@icons/Minus';
+import { PrintPlugin } from '@icons/Print';
+import { InfoPlugin } from '@icons/Info';
 
 const RtxIconsPlugin = {
   install: (app: App) => {
@@ -40,6 +47,13 @@ const RtxIconsPlugin = {
     app.use(UpdaterPlugin);
     app.use(ErasePlugin);
     app.use(MenuPlugin);
+    app.use(ComparePlugin);
+    app.use(UserPlugin);
+    app.use(CalendarPlugin);
+    app.use(ApplyPlugin);
+    app.use(MinusPlugin);
+    app.use(PrintPlugin);
+    app.use(InfoPlugin);
   }
 }
 export default RtxIconsPlugin;
