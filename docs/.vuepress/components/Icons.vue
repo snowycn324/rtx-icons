@@ -46,6 +46,7 @@ import { Apply } from "../../../src/icons/Apply"
 import { Minus } from "../../../src/icons/Minus"
 import { Print } from "../../../src/icons/Print"
 import { Info } from "../../../src/icons/Info"
+import { Duplicate } from "../../../src/icons/Duplicate"
 
 export default {
   name: "Icons",
@@ -158,6 +159,10 @@ export default {
         {
           name: "rtx-info",
           icon: markRaw(Info),
+        },
+        {
+          name: "rtx-duplicate",
+          icon: markRaw(Duplicate),
         },
       ]
     }
