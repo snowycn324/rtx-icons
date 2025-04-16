@@ -49,7 +49,7 @@ const C = ["width", "height"], u = ["fill"], a = /* @__PURE__ */ n({
   install(o) {
     o.component("rtx-close", f);
   }
-}, g = ["width", "height"], H = ["fill"], m = /* @__PURE__ */ n({
+}, g = ["width", "height"], H = ["fill"], v = /* @__PURE__ */ n({
   __name: "Edit",
   props: {
     size: { default: 12 },
@@ -70,9 +70,9 @@ const C = ["width", "height"], u = ["fill"], a = /* @__PURE__ */ n({
       }, null, 8, H)
     ], 8, g));
   }
-}), v = {
+}), m = {
   install(o) {
-    o.component("rtx-edit", m);
+    o.component("rtx-edit", v);
   }
 }, V = ["width", "height", "fill"], L = ["fill"], M = /* @__PURE__ */ n({
   __name: "Left",
@@ -149,7 +149,7 @@ const C = ["width", "height"], u = ["fill"], a = /* @__PURE__ */ n({
   install(o) {
     o.component("rtx-search", k);
   }
-}, E = ["width", "height", "fill"], U = ["fill"], R = /* @__PURE__ */ n({
+}, A = ["width", "height", "fill"], E = ["fill"], U = /* @__PURE__ */ n({
   __name: "Demap",
   props: {
     size: { default: 12 },
@@ -167,14 +167,14 @@ const C = ["width", "height"], u = ["fill"], a = /* @__PURE__ */ n({
       s("path", {
         d: "M7.434 5.26736L8.4 6.23336V5.26736H7.434ZM9 2.86736H6.6V4.00736H9C10.026 4.00736 10.86 4.84136 10.86 5.86736C10.86 6.62936 10.398 7.28936 9.738 7.57136L10.578 8.41136C11.43 7.88336 12 6.94136 12 5.86736C12 4.21136 10.656 2.86736 9 2.86736ZM0 1.22936L1.866 3.09536C0.774 3.53936 0 4.61336 0 5.86736C0 7.52336 1.344 8.86736 3 8.86736H5.4V7.72736H3C1.974 7.72736 1.14 6.89336 1.14 5.86736C1.14 4.91336 1.866 4.12736 2.796 4.02536L4.038 5.26736H3.6V6.46736H5.238L6.6 7.82936V8.86736H7.638L10.044 11.2734L10.89 10.4274L0.846 0.383362L0 1.22936Z",
         fill: l.value
-      }, null, 8, U)
-    ], 8, E));
+      }, null, 8, E)
+    ], 8, A));
   }
-}), b = {
+}), R = {
   install(o) {
-    o.component("rtx-demap", R);
+    o.component("rtx-demap", U);
   }
-}, A = ["width", "height", "fill"], j = ["fill"], q = /* @__PURE__ */ n({
+}, b = ["width", "height", "fill"], j = ["fill"], q = /* @__PURE__ */ n({
   __name: "Remap",
   props: {
     size: { default: 12 },
@@ -193,7 +193,7 @@ const C = ["width", "height"], u = ["fill"], a = /* @__PURE__ */ n({
         d: "M9 0H6.6V1.2H9C9.99 1.2 10.8 2.01 10.8 3C10.8 3.99 9.99 4.8 9 4.8H6.6V6H9C10.656 6 12 4.656 12 3C12 1.344 10.656 0 9 0ZM5.4 4.8H3C2.01 4.8 1.2 3.99 1.2 3C1.2 2.01 2.01 1.2 3 1.2H5.4V0H3C1.344 0 0 1.344 0 3C0 4.656 1.344 6 3 6H5.4V4.8ZM3.6 2.4H8.4V3.6H3.6V2.4Z",
         fill: l.value
       }, null, 8, j)
-    ], 8, A));
+    ], 8, b));
   }
 }), I = {
   install(o) {
@@ -399,11 +399,11 @@ const C = ["width", "height"], u = ["fill"], a = /* @__PURE__ */ n({
       }, null, 8, g1)
     ], 8, w1));
   }
-}), m1 = {
+}), v1 = {
   install(o) {
     o.component("rtx-download", H1);
   }
-}, v1 = ["width", "height", "fill"], V1 = ["fill"], L1 = /* @__PURE__ */ n({
+}, m1 = ["width", "height", "fill"], V1 = ["fill"], L1 = /* @__PURE__ */ n({
   __name: "Updater",
   props: {
     size: { default: 12 },
@@ -422,7 +422,7 @@ const C = ["width", "height"], u = ["fill"], a = /* @__PURE__ */ n({
         d: "M2.11362 3.27194L0.213548 2.06686L1.14021 6.20707L5.28041 5.28041L3.38034 4.07533C4.70994 1.97892 7.49423 1.35574 9.59065 2.68534C10.2303 3.09105 10.7379 3.63502 11.0829 4.25344L12.594 3.91521C12.1283 2.9271 11.3884 2.04929 10.394 1.41863C7.59459 -0.356856 3.88911 0.472502 2.11362 3.27194ZM10.9806 8.89565C9.65103 10.9921 6.86674 11.6152 4.77032 10.2856C4.13063 9.87993 3.62303 9.33596 3.27811 8.71755L1.76693 9.05578C2.23264 10.0439 2.97257 10.9217 3.96694 11.5524C6.76638 13.3278 10.4719 12.4985 12.2473 9.69904L14.1474 10.9041L13.2208 6.76391L9.08056 7.69057L10.9806 8.89565Z",
         fill: l.value
       }, null, 8, V1)
-    ], 8, v1));
+    ], 8, m1));
   }
 }), M1 = {
   install(o) {
@@ -478,7 +478,7 @@ const C = ["width", "height"], u = ["fill"], a = /* @__PURE__ */ n({
   install(o) {
     o.component("rtx-menu", D1);
   }
-}, y1 = ["width", "height"], E1 = ["fill"], U1 = ["fill"], R1 = /* @__PURE__ */ n({
+}, y1 = ["width", "height"], A1 = ["fill"], E1 = ["fill"], U1 = /* @__PURE__ */ n({
   __name: "Compare",
   props: {
     size: { default: 12 },
@@ -496,18 +496,18 @@ const C = ["width", "height"], u = ["fill"], a = /* @__PURE__ */ n({
       s("path", {
         d: "M9.0982 2.18183H4V3.63638H9.0982V5.8182L12 2.9091L9.0982 0V2.18183Z",
         fill: l.value
-      }, null, 8, E1),
+      }, null, 8, A1),
       s("path", {
         d: "M2.9018 7.27234L8 7.27234L8 5.81779L2.9018 5.81779L2.9018 3.63596L-2.74022e-05 6.54506L2.9018 9.45416L2.9018 7.27234Z",
         fill: l.value
-      }, null, 8, U1)
+      }, null, 8, E1)
     ], 8, y1));
   }
-}), b1 = {
+}), R1 = {
   install(o) {
-    o.component("rtx-compare", R1);
+    o.component("rtx-compare", U1);
   }
-}, A1 = ["width", "height"], j1 = ["fill"], q1 = /* @__PURE__ */ n({
+}, b1 = ["width", "height"], j1 = ["fill"], q1 = /* @__PURE__ */ n({
   __name: "User",
   props: {
     size: { default: 12 },
@@ -526,7 +526,7 @@ const C = ["width", "height"], u = ["fill"], a = /* @__PURE__ */ n({
         d: "M6 1.5C6.825 1.5 7.5 2.175 7.5 3C7.5 3.825 6.825 4.5 6 4.5C5.175 4.5 4.5 3.825 4.5 3C4.5 2.175 5.175 1.5 6 1.5ZM6 9C8.025 9 10.35 9.9675 10.5 10.5H1.5C1.6725 9.96 3.9825 9 6 9ZM6 0C4.3425 0 3 1.3425 3 3C3 4.6575 4.3425 6 6 6C7.6575 6 9 4.6575 9 3C9 1.3425 7.6575 0 6 0ZM6 7.5C3.9975 7.5 0 8.505 0 10.5V12H12V10.5C12 8.505 8.0025 7.5 6 7.5Z",
         fill: l.value
       }, null, 8, j1)
-    ], 8, A1));
+    ], 8, b1));
   }
 }), I1 = {
   install(o) {
@@ -694,11 +694,36 @@ const C = ["width", "height"], u = ["fill"], a = /* @__PURE__ */ n({
   install(o) {
     o.component("rtx-duplicate", _2);
   }
-}, f2 = {
+}, d2 = ["width", "height"], f2 = ["fill"], w2 = /* @__PURE__ */ n({
+  __name: "Activation",
+  props: {
+    size: { default: 12 },
+    color: {}
+  },
+  setup(o) {
+    const e = o, l = i(() => e.color || "currentColor");
+    return (t, h) => (r(), c("svg", {
+      width: t.size,
+      height: t.size,
+      viewBox: "0 0 12 12",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg"
+    }, [
+      s("path", {
+        d: "M6.66667 0H5.33333V6.66667H6.66667V0ZM9.88667 1.44667L8.94 2.39333C9.99333 3.24 10.6667 4.54 10.6667 6C10.6667 8.58 8.58 10.6667 6 10.6667C3.42 10.6667 1.33333 8.58 1.33333 6C1.33333 4.54 2.00667 3.24 3.05333 2.38667L2.11333 1.44667C0.82 2.54667 0 4.17333 0 6C0 9.31333 2.68667 12 6 12C9.31333 12 12 9.31333 12 6C12 4.17333 11.18 2.54667 9.88667 1.44667Z",
+        fill: l.value
+      }, null, 8, f2)
+    ], 8, d2));
+  }
+}), g2 = {
+  install(o) {
+    o.component("rtx-activation", w2);
+  }
+}, v2 = {
   install: (o) => {
-    o.use(_), o.use(w), o.use(v), o.use(z), o.use(B), o.use(y), o.use(b), o.use(I), o.use(G), o.use(Q), o.use(o1), o.use(s1), o.use(c1), o.use(a1), o.use(f1), o.use(m1), o.use(M1), o.use(x1), o.use(k1), o.use(b1), o.use(I1), o.use(G1), o.use(Q1), o.use(o2), o.use(s2), o.use(c2), o.use(p2);
+    o.use(_), o.use(w), o.use(m), o.use(z), o.use(B), o.use(y), o.use(R), o.use(I), o.use(G), o.use(Q), o.use(o1), o.use(s1), o.use(c1), o.use(a1), o.use(f1), o.use(v1), o.use(M1), o.use(x1), o.use(k1), o.use(R1), o.use(I1), o.use(G1), o.use(Q1), o.use(o2), o.use(s2), o.use(c2), o.use(p2), o.use(g2);
   }
 };
 export {
-  f2 as default
+  v2 as default
 };

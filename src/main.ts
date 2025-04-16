@@ -26,6 +26,7 @@ import { MinusPlugin } from '@icons/Minus';
 import { PrintPlugin } from '@icons/Print';
 import { InfoPlugin } from '@icons/Info';
 import { DuplicatePlugin } from '@icons/Duplicate';
+import { ActivationPlugin } from '@icons/Activation';
 
 const RtxIconsPlugin = {
   install: (app: App) => {
@@ -56,6 +57,7 @@ const RtxIconsPlugin = {
     app.use(PrintPlugin);
     app.use(InfoPlugin);
     app.use(DuplicatePlugin);
+    app.use(ActivationPlugin);
   }
 }
 export default RtxIconsPlugin;
