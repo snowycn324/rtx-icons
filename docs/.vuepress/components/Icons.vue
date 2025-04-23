@@ -48,6 +48,7 @@ import { Print } from "../../../src/icons/Print"
 import { Info } from "../../../src/icons/Info"
 import { Duplicate } from "../../../src/icons/Duplicate"
 import { Activation } from "../../../src/icons/Activation"
+import { End } from "../../../src/icons/End"
 
 export default {
   name: "Icons",
@@ -168,6 +169,10 @@ export default {
         {
           name: "rtx-activation",
           icon: markRaw(Activation),
+        },
+        {
+          name: "rtx-end",
+          icon: markRaw(End),
         },
       ]
     }
