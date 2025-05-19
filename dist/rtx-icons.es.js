@@ -70,11 +70,11 @@ const C = ["width", "height"], u = ["fill"], a = /* @__PURE__ */ n({
       }, null, 8, H)
     ], 8, g));
   }
-}), V = {
+}), m = {
   install(o) {
     o.component("rtx-edit", v);
   }
-}, m = ["width", "height", "fill"], L = ["fill"], M = /* @__PURE__ */ n({
+}, V = ["width", "height", "fill"], L = ["fill"], M = /* @__PURE__ */ n({
   __name: "Left",
   props: {
     size: { default: 12 },
@@ -93,7 +93,7 @@ const C = ["width", "height"], u = ["fill"], a = /* @__PURE__ */ n({
         d: "M8 1.41L3.42 6L8 10.59L6.59 12L0.590001 6L6.59 -1.23266e-07L8 1.41Z",
         fill: l.value
       }, null, 8, L)
-    ], 8, m));
+    ], 8, V));
   }
 }), $ = {
   install(o) {
@@ -403,7 +403,7 @@ const C = ["width", "height"], u = ["fill"], a = /* @__PURE__ */ n({
   install(o) {
     o.component("rtx-download", H1);
   }
-}, V1 = ["width", "height", "fill"], m1 = ["fill"], L1 = /* @__PURE__ */ n({
+}, m1 = ["width", "height", "fill"], V1 = ["fill"], L1 = /* @__PURE__ */ n({
   __name: "Updater",
   props: {
     size: { default: 12 },
@@ -421,8 +421,8 @@ const C = ["width", "height"], u = ["fill"], a = /* @__PURE__ */ n({
       s("path", {
         d: "M2.11362 3.27194L0.213548 2.06686L1.14021 6.20707L5.28041 5.28041L3.38034 4.07533C4.70994 1.97892 7.49423 1.35574 9.59065 2.68534C10.2303 3.09105 10.7379 3.63502 11.0829 4.25344L12.594 3.91521C12.1283 2.9271 11.3884 2.04929 10.394 1.41863C7.59459 -0.356856 3.88911 0.472502 2.11362 3.27194ZM10.9806 8.89565C9.65103 10.9921 6.86674 11.6152 4.77032 10.2856C4.13063 9.87993 3.62303 9.33596 3.27811 8.71755L1.76693 9.05578C2.23264 10.0439 2.97257 10.9217 3.96694 11.5524C6.76638 13.3278 10.4719 12.4985 12.2473 9.69904L14.1474 10.9041L13.2208 6.76391L9.08056 7.69057L10.9806 8.89565Z",
         fill: l.value
-      }, null, 8, m1)
-    ], 8, V1));
+      }, null, 8, V1)
+    ], 8, m1));
   }
 }), M1 = {
   install(o) {
@@ -719,7 +719,7 @@ const C = ["width", "height"], u = ["fill"], a = /* @__PURE__ */ n({
   install(o) {
     o.component("rtx-activation", w2);
   }
-}, H2 = ["width", "height"], v2 = ["fill"], V2 = ["fill"], m2 = /* @__PURE__ */ n({
+}, H2 = ["width", "height"], v2 = ["fill"], m2 = ["fill"], V2 = /* @__PURE__ */ n({
   __name: "End",
   props: {
     size: { default: 12 },
@@ -741,18 +741,43 @@ const C = ["width", "height"], u = ["fill"], a = /* @__PURE__ */ n({
       s("path", {
         d: "M8.42432 5.23853V6.76139C9.23972 6.57531 9.23915 5.42433 8.42432 5.23853Z",
         fill: l.value
-      }, null, 8, V2)
+      }, null, 8, m2)
     ], 8, H2));
   }
 }), L2 = {
   install(o) {
-    o.component("rtx-end", m2);
+    o.component("rtx-end", V2);
   }
-}, $2 = {
+}, M2 = ["width", "height", "fill"], $2 = ["fill"], z2 = /* @__PURE__ */ n({
+  __name: "Dropdown",
+  props: {
+    size: { default: 12 },
+    color: {}
+  },
+  setup(o) {
+    const e = o, l = i(() => e.color || "currentColor");
+    return (t, h) => (r(), c("svg", {
+      width: t.size,
+      height: t.size * 0.67,
+      viewBox: "0 0 12 8",
+      fill: l.value,
+      xmlns: "http://www.w3.org/2000/svg"
+    }, [
+      s("path", {
+        d: "M0 0L6 8L12 0H0Z",
+        fill: l.value
+      }, null, 8, $2)
+    ], 8, M2));
+  }
+}), Z2 = {
+  install(o) {
+    o.component("rtx-dropdown", z2);
+  }
+}, B2 = {
   install: (o) => {
-    o.use(_), o.use(w), o.use(V), o.use($), o.use(B), o.use(E), o.use(R), o.use(I), o.use(G), o.use(Q), o.use(o1), o.use(s1), o.use(c1), o.use(a1), o.use(f1), o.use(v1), o.use(M1), o.use(x1), o.use(k1), o.use(R1), o.use(I1), o.use(G1), o.use(Q1), o.use(o2), o.use(s2), o.use(c2), o.use(d2), o.use(g2), o.use(L2);
+    o.use(_), o.use(w), o.use(m), o.use($), o.use(B), o.use(E), o.use(R), o.use(I), o.use(G), o.use(Q), o.use(o1), o.use(s1), o.use(c1), o.use(a1), o.use(f1), o.use(v1), o.use(M1), o.use(x1), o.use(k1), o.use(R1), o.use(I1), o.use(G1), o.use(Q1), o.use(o2), o.use(s2), o.use(c2), o.use(d2), o.use(g2), o.use(L2), o.use(Z2);
   }
 };
 export {
-  $2 as default
+  B2 as default
 };

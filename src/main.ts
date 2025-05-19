@@ -28,6 +28,7 @@ import { InfoPlugin } from '@icons/Info';
 import { DuplicatePlugin } from '@icons/Duplicate';
 import { ActivationPlugin } from '@icons/Activation';
 import { EndPlugin } from '@icons/End';
+import { DropdownPlugin } from '@icons/Dropdown';
 
 const RtxIconsPlugin = {
   install: (app: App) => {
@@ -60,6 +61,7 @@ const RtxIconsPlugin = {
     app.use(DuplicatePlugin);
     app.use(ActivationPlugin);
     app.use(EndPlugin);
+    app.use(DropdownPlugin);
   }
 }
 export default RtxIconsPlugin;

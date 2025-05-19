@@ -49,6 +49,7 @@ import { Info } from "../../../src/icons/Info"
 import { Duplicate } from "../../../src/icons/Duplicate"
 import { Activation } from "../../../src/icons/Activation"
 import { End } from "../../../src/icons/End"
+import { Dropdown } from "../../../src/icons/Dropdown"
 
 export default {
   name: "Icons",
@@ -173,6 +174,10 @@ export default {
         {
           name: "rtx-end",
           icon: markRaw(End),
+        },
+        {
+          name: "rtx-dropdown",
+          icon: markRaw(Dropdown),
         },
       ]
     }
