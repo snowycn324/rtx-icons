@@ -50,6 +50,11 @@ import { Duplicate } from "../../../src/icons/Duplicate"
 import { Activation } from "../../../src/icons/Activation"
 import { End } from "../../../src/icons/End"
 import { Dropdown } from "../../../src/icons/Dropdown"
+import { Sales } from '../../../src/icons/Sales';
+import { Cost } from '../../../src/icons/Cost';
+import { Adjustment } from '../../../src/icons/Adjustment';
+import { Revaluation } from '../../../src/icons/Revaluation';
+import { Tendency } from '../../../src/icons/Tendency';
 
 export default {
   name: "Icons",
@@ -178,6 +183,26 @@ export default {
         {
           name: "rtx-dropdown",
           icon: markRaw(Dropdown),
+        },
+        {
+          name: "rtx-sales",
+          icon: markRaw(Sales),
+        },
+        {
+          name: "rtx-cost",
+          icon: markRaw(Cost),
+        },
+        {
+          name: "rtx-adjustment",
+          icon: markRaw(Adjustment),
+        },
+        {
+          name: "rtx-revaluation",
+          icon: markRaw(Revaluation),
+        },
+                {
+          name: "rtx-tendency",
+          icon: markRaw(Tendency),
         },
       ]
     }

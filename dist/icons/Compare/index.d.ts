@@ -1,6 +1,5 @@
-import { default as Compare } from './Compare.vue';
 import { App } from 'vue';
-
+import { default as Compare } from './Compare.vue';
 export declare const ComparePlugin: {
     install(app: App): void;
 };

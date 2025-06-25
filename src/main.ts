@@ -29,6 +29,11 @@ import { DuplicatePlugin } from '@icons/Duplicate';
 import { ActivationPlugin } from '@icons/Activation';
 import { EndPlugin } from '@icons/End';
 import { DropdownPlugin } from '@icons/Dropdown';
+import { SalesPlugin } from '@icons/Sales';
+import { CostPlugin } from '@icons/Cost';
+import { AdjustmentPlugin } from '@icons/Adjustment';
+import { RevaluationPlugin } from '@icons/Revaluation';
+import { TendencyPlugin } from '@icons/Tendency';
 
 const RtxIconsPlugin = {
   install: (app: App) => {
@@ -62,6 +67,11 @@ const RtxIconsPlugin = {
     app.use(ActivationPlugin);
     app.use(EndPlugin);
     app.use(DropdownPlugin);
+    app.use(SalesPlugin);
+    app.use(CostPlugin);
+    app.use(AdjustmentPlugin);
+    app.use(RevaluationPlugin);
+    app.use(TendencyPlugin);
   }
 }
 export default RtxIconsPlugin;
