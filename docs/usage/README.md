@@ -31,4 +31,4 @@ export default defineNuxtPlugin((nuxtApp) => {
 ```
 
 ### Version
-Now the latest version of RTX-Icons is ```0.0.10```
+Now the latest version of RTX-Icons is ```0.0.11```

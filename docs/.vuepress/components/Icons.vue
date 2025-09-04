@@ -55,6 +55,7 @@ import { Cost } from '../../../src/icons/Cost';
 import { Adjustment } from '../../../src/icons/Adjustment';
 import { Revaluation } from '../../../src/icons/Revaluation';
 import { Tendency } from '../../../src/icons/Tendency';
+import { Option } from '../../../src/icons/Option';
 
 export default {
   name: "Icons",
@@ -200,9 +201,13 @@ export default {
           name: "rtx-revaluation",
           icon: markRaw(Revaluation),
         },
-                {
+        {
           name: "rtx-tendency",
           icon: markRaw(Tendency),
+        },
+        {
+          name: "rtx-option",
+          icon: markRaw(Option),
         },
       ]
     }

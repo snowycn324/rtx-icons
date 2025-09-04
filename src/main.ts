@@ -34,6 +34,7 @@ import { CostPlugin } from '@icons/Cost';
 import { AdjustmentPlugin } from '@icons/Adjustment';
 import { RevaluationPlugin } from '@icons/Revaluation';
 import { TendencyPlugin } from '@icons/Tendency';
+import { OptionPlugin } from '@icons/Option';
 
 const RtxIconsPlugin = {
   install: (app: App) => {
@@ -72,6 +73,7 @@ const RtxIconsPlugin = {
     app.use(AdjustmentPlugin);
     app.use(RevaluationPlugin);
     app.use(TendencyPlugin);
+    app.use(OptionPlugin);
   }
 }
 export default RtxIconsPlugin;
