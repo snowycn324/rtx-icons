@@ -56,6 +56,7 @@ import { Adjustment } from '../../../src/icons/Adjustment';
 import { Revaluation } from '../../../src/icons/Revaluation';
 import { Tendency } from '../../../src/icons/Tendency';
 import { Option } from '../../../src/icons/Option';
+import { Refresh } from '../../../src/icons/Refresh';
 
 export default {
   name: "Icons",
@@ -208,6 +209,10 @@ export default {
         {
           name: "rtx-option",
           icon: markRaw(Option),
+        },
+        {
+          name: "rtx-refresh",
+          icon: markRaw(Refresh),
         },
       ]
     }

@@ -1,46 +1,40 @@
 {
-  "hash": "28a962df",
-  "configHash": "87579fd0",
-  "lockfileHash": "a0c3dc68",
-  "browserHash": "b64c8756",
+  "hash": "7787faf6",
+  "configHash": "b555e9ca",
+  "lockfileHash": "04282a27",
+  "browserHash": "b204545b",
   "optimized": {
     "@vue/devtools-api": {
-      "src": "../../../../node_modules/.pnpm/@vue+devtools-api@6.6.3/node_modules/@vue/devtools-api/lib/esm/index.js",
+      "src": "../../../../node_modules/.pnpm/@vue+devtools-api@6.6.4/node_modules/@vue/devtools-api/lib/esm/index.js",
       "file": "@vue_devtools-api.js",
-      "fileHash": "c86d64bb",
+      "fileHash": "0ae72d07",
       "needsInterop": false
     },
     "@vuepress/shared": {
       "src": "../../../../node_modules/.pnpm/@vuepress+shared@2.0.0-rc.14/node_modules/@vuepress/shared/dist/index.js",
       "file": "@vuepress_shared.js",
-      "fileHash": "18ed7612",
+      "fileHash": "e73a77bb",
       "needsInterop": false
     },
     "vue": {
-      "src": "../../../../node_modules/.pnpm/vue@3.4.38_typescript@5.5.4/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "src": "../../../../node_modules/.pnpm/vue@3.5.17_typescript@5.8.3/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "5f08d983",
+      "fileHash": "b8ec8dfb",
       "needsInterop": false
     },
     "vue-router": {
-      "src": "../../../../node_modules/.pnpm/vue-router@4.4.3_vue@3.4.38/node_modules/vue-router/dist/vue-router.esm-bundler.js",
+      "src": "../../../../node_modules/.pnpm/vue-router@4.5.1_vue@3.5.17_typescript@5.8.3_/node_modules/vue-router/dist/vue-router.esm-bundler.js",
       "file": "vue-router.js",
-      "fileHash": "b11a61d1",
-      "needsInterop": false
-    },
-    "vue-3-slider-component": {
-      "src": "../../../../node_modules/.pnpm/vue-3-slider-component@1.0.1_vue@3.4.38/node_modules/vue-3-slider-component/dist/vue-3-slider-component.mjs",
-      "file": "vue-3-slider-component.js",
-      "fileHash": "da88fe56",
+      "fileHash": "55c3e1bc",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-D2YVLGJ5": {
-      "file": "chunk-D2YVLGJ5.js"
+    "chunk-XQNPNIQJ": {
+      "file": "chunk-XQNPNIQJ.js"
     },
-    "chunk-HBGG36HX": {
-      "file": "chunk-HBGG36HX.js"
+    "chunk-QYQIBODO": {
+      "file": "chunk-QYQIBODO.js"
     }
   }
 }
