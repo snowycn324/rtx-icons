@@ -36,6 +36,7 @@ import { RevaluationPlugin } from '@icons/Revaluation';
 import { TendencyPlugin } from '@icons/Tendency';
 import { OptionPlugin } from '@icons/Option';
 import { RefreshPlugin } from '@icons/Refresh';
+import { UploadPlugin } from '@icons/Upload';
 
 const RtxIconsPlugin = {
   install: (app: App) => {
@@ -76,6 +77,7 @@ const RtxIconsPlugin = {
     app.use(TendencyPlugin);
     app.use(OptionPlugin);
     app.use(RefreshPlugin);
+    app.use(UploadPlugin);
   }
 }
 export default RtxIconsPlugin;

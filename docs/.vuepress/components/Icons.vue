@@ -57,6 +57,7 @@ import { Revaluation } from '../../../src/icons/Revaluation';
 import { Tendency } from '../../../src/icons/Tendency';
 import { Option } from '../../../src/icons/Option';
 import { Refresh } from '../../../src/icons/Refresh';
+import { Upload } from '../../../src/icons/Upload';
 
 export default {
   name: "Icons",
@@ -214,6 +215,10 @@ export default {
           name: "rtx-refresh",
           icon: markRaw(Refresh),
         },
+        {
+          name: "rtx-upload",
+          icon: markRaw(Upload),
+        },
       ]
     }
   },
@@ -280,7 +285,7 @@ ul,li {
 }
 
 .search-input {
-  color: rgb(61, 58, 58);
+  color: rgb(32, 24, 24);
   width: 540px;
   padding-left: 15px;
   margin-left: 20px;
