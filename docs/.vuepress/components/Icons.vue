@@ -58,6 +58,7 @@ import { Tendency } from '../../../src/icons/Tendency';
 import { Option } from '../../../src/icons/Option';
 import { Refresh } from '../../../src/icons/Refresh';
 import { Upload } from '../../../src/icons/Upload';
+import { DateRange } from '../../../src/icons/DateRange';
 
 export default {
   name: "Icons",
@@ -218,6 +219,10 @@ export default {
         {
           name: "rtx-upload",
           icon: markRaw(Upload),
+        },
+        {
+          name: "rtx-date-range",
+          icon: markRaw(DateRange),
         },
       ]
     }

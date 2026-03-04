@@ -37,6 +37,7 @@ import { TendencyPlugin } from '@icons/Tendency';
 import { OptionPlugin } from '@icons/Option';
 import { RefreshPlugin } from '@icons/Refresh';
 import { UploadPlugin } from '@icons/Upload';
+import { DateRangePlugin } from '@icons/DateRange';
 
 const RtxIconsPlugin = {
   install: (app: App) => {
@@ -78,6 +79,7 @@ const RtxIconsPlugin = {
     app.use(OptionPlugin);
     app.use(RefreshPlugin);
     app.use(UploadPlugin);
+    app.use(DateRangePlugin);
   }
 }
 export default RtxIconsPlugin;

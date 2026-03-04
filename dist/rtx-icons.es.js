@@ -1,4 +1,4 @@
-import { defineComponent as n, computed as i, createElementBlock as C, openBlock as r, createElementVNode as s } from "vue";
+import { defineComponent as n, computed as i, createElementBlock as r, openBlock as C, createElementVNode as s } from "vue";
 const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   __name: "Add",
   props: {
@@ -7,7 +7,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size,
       height: t.size,
       viewBox: "0 0 12 12",
@@ -24,7 +24,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   install(o) {
     o.component("rtx-add", a);
   }
-}, d = ["width", "height"], p = ["fill"], f = /* @__PURE__ */ n({
+}, d = ["width", "height"], p = ["fill"], w = /* @__PURE__ */ n({
   __name: "Close",
   props: {
     size: { default: 10 },
@@ -32,7 +32,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size,
       height: t.size,
       viewBox: "0 0 12 12",
@@ -45,9 +45,9 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
       }, null, 8, p)
     ], 8, d));
   }
-}), w = {
+}), f = {
   install(o) {
-    o.component("rtx-close", f);
+    o.component("rtx-close", w);
   }
 }, g = ["width", "height"], H = ["fill"], v = /* @__PURE__ */ n({
   __name: "Edit",
@@ -57,7 +57,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size,
       height: t.size,
       viewBox: "0 0 12 12",
@@ -82,7 +82,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size * 0.67,
       height: t.size,
       viewBox: "0 0 8 12",
@@ -99,7 +99,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   install(o) {
     o.component("rtx-left", M);
   }
-}, z = ["width", "height", "fill"], $ = ["fill"], x = /* @__PURE__ */ n({
+}, $ = ["width", "height", "fill"], z = ["fill"], x = /* @__PURE__ */ n({
   __name: "Back",
   props: {
     size: { default: 12 },
@@ -107,7 +107,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size,
       height: t.size,
       viewBox: "0 0 12 12",
@@ -117,14 +117,14 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
       s("path", {
         d: "M12 5.25H2.8725L7.065 1.0575L6 0L0 6L6 12L7.0575 10.9425L2.8725 6.75H12V5.25Z",
         fill: l.value
-      }, null, 8, $)
-    ], 8, z));
+      }, null, 8, z)
+    ], 8, $));
   }
 }), B = {
   install(o) {
     o.component("rtx-back", x);
   }
-}, P = ["width", "height", "fill"], y = ["fill"], D = /* @__PURE__ */ n({
+}, P = ["width", "height", "fill"], k = ["fill"], D = /* @__PURE__ */ n({
   __name: "Search",
   props: {
     size: { default: 12 },
@@ -132,7 +132,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size,
       height: t.size,
       viewBox: "0 0 12 12",
@@ -142,14 +142,14 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
       s("path", {
         d: "M8.57633 7.54717H8.03431L7.8422 7.36192C8.51458 6.57976 8.91938 5.56432 8.91938 4.45969C8.91938 1.99657 6.92281 0 4.45969 0C1.99657 0 0 1.99657 0 4.45969C0 6.92281 1.99657 8.91938 4.45969 8.91938C5.56432 8.91938 6.57976 8.51458 7.36192 7.8422L7.54717 8.03431V8.57633L10.9777 12L12 10.9777L8.57633 7.54717ZM4.45969 7.54717C2.75129 7.54717 1.37221 6.1681 1.37221 4.45969C1.37221 2.75129 2.75129 1.37221 4.45969 1.37221C6.1681 1.37221 7.54717 2.75129 7.54717 4.45969C7.54717 6.1681 6.1681 7.54717 4.45969 7.54717Z",
         fill: l.value
-      }, null, 8, y)
+      }, null, 8, k)
     ], 8, P));
   }
-}), A = {
+}), j = {
   install(o) {
     o.component("rtx-search", D);
   }
-}, R = ["width", "height", "fill"], k = ["fill"], E = /* @__PURE__ */ n({
+}, y = ["width", "height", "fill"], A = ["fill"], R = /* @__PURE__ */ n({
   __name: "Demap",
   props: {
     size: { default: 12 },
@@ -157,7 +157,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size,
       height: t.size * 0.92,
       viewBox: "0 0 12 12",
@@ -167,14 +167,14 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
       s("path", {
         d: "M7.434 5.26736L8.4 6.23336V5.26736H7.434ZM9 2.86736H6.6V4.00736H9C10.026 4.00736 10.86 4.84136 10.86 5.86736C10.86 6.62936 10.398 7.28936 9.738 7.57136L10.578 8.41136C11.43 7.88336 12 6.94136 12 5.86736C12 4.21136 10.656 2.86736 9 2.86736ZM0 1.22936L1.866 3.09536C0.774 3.53936 0 4.61336 0 5.86736C0 7.52336 1.344 8.86736 3 8.86736H5.4V7.72736H3C1.974 7.72736 1.14 6.89336 1.14 5.86736C1.14 4.91336 1.866 4.12736 2.796 4.02536L4.038 5.26736H3.6V6.46736H5.238L6.6 7.82936V8.86736H7.638L10.044 11.2734L10.89 10.4274L0.846 0.383362L0 1.22936Z",
         fill: l.value
-      }, null, 8, k)
-    ], 8, R));
+      }, null, 8, A)
+    ], 8, y));
   }
-}), U = {
+}), E = {
   install(o) {
-    o.component("rtx-demap", E);
+    o.component("rtx-demap", R);
   }
-}, j = ["width", "height", "fill"], b = ["fill"], S = /* @__PURE__ */ n({
+}, U = ["width", "height", "fill"], b = ["fill"], S = /* @__PURE__ */ n({
   __name: "Remap",
   props: {
     size: { default: 12 },
@@ -182,7 +182,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size,
       height: t.size / 2,
       viewBox: "0 0 12 6",
@@ -193,7 +193,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
         d: "M9 0H6.6V1.2H9C9.99 1.2 10.8 2.01 10.8 3C10.8 3.99 9.99 4.8 9 4.8H6.6V6H9C10.656 6 12 4.656 12 3C12 1.344 10.656 0 9 0ZM5.4 4.8H3C2.01 4.8 1.2 3.99 1.2 3C1.2 2.01 2.01 1.2 3 1.2H5.4V0H3C1.344 0 0 1.344 0 3C0 4.656 1.344 6 3 6H5.4V4.8ZM3.6 2.4H8.4V3.6H3.6V2.4Z",
         fill: l.value
       }, null, 8, b)
-    ], 8, j));
+    ], 8, U));
   }
 }), T = {
   install(o) {
@@ -207,7 +207,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size,
       height: t.size,
       viewBox: "0 0 12 12",
@@ -236,7 +236,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size,
       height: t.size,
       viewBox: "0 0 8 12",
@@ -261,7 +261,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size,
       height: t.size,
       viewBox: "0 0 12 12",
@@ -286,7 +286,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size * 0.92,
       height: t.size,
       viewBox: "0 0 11 13",
@@ -303,7 +303,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   install(o) {
     o.component("rtx-copy", e1);
   }
-}, n1 = ["width", "height", "fill"], i1 = ["fill"], C1 = /* @__PURE__ */ n({
+}, n1 = ["width", "height", "fill"], i1 = ["fill"], r1 = /* @__PURE__ */ n({
   __name: "Down",
   props: {
     size: { default: 12 },
@@ -311,7 +311,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size,
       height: t.size * 0.67,
       viewBox: "0 0 12 8",
@@ -324,9 +324,9 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
       }, null, 8, i1)
     ], 8, n1));
   }
-}), r1 = {
+}), C1 = {
   install(o) {
-    o.component("rtx-down", C1);
+    o.component("rtx-down", r1);
   }
 }, c1 = ["width", "height", "fill"], h1 = ["fill"], u1 = /* @__PURE__ */ n({
   __name: "Up",
@@ -336,7 +336,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size,
       height: t.size * 0.67,
       viewBox: "0 0 12 8",
@@ -361,7 +361,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size * 0.58,
       height: t.size,
       viewBox: "0 0 7 12",
@@ -374,11 +374,11 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
       }, null, 8, d1)
     ], 8, _1));
   }
-}), f1 = {
+}), w1 = {
   install(o) {
     o.component("rtx-trigger", p1);
   }
-}, w1 = ["width", "height", "fill"], g1 = ["fill"], H1 = /* @__PURE__ */ n({
+}, f1 = ["width", "height", "fill"], g1 = ["fill"], H1 = /* @__PURE__ */ n({
   __name: "Download",
   props: {
     size: { default: 12 },
@@ -386,7 +386,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size * 0.83,
       height: t.size,
       viewBox: "0 0 10 12",
@@ -397,7 +397,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
         d: "M9.88235 4.23529H7.05882V0H2.82353V4.23529H0L4.94118 9.17647L9.88235 4.23529ZM0 10.5882V12H9.88235V10.5882H0Z",
         fill: l.value
       }, null, 8, g1)
-    ], 8, w1));
+    ], 8, f1));
   }
 }), v1 = {
   install(o) {
@@ -411,7 +411,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size,
       height: t.size * 1.33,
       viewBox: "0 0 15 13",
@@ -428,7 +428,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   install(o) {
     o.component("rtx-updater", L1);
   }
-}, Z1 = ["width", "height"], z1 = ["fill"], $1 = /* @__PURE__ */ n({
+}, Z1 = ["width", "height"], $1 = ["fill"], z1 = /* @__PURE__ */ n({
   __name: "Erase",
   props: {
     size: { default: 12 },
@@ -436,7 +436,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size,
       height: t.size * 0.92,
       viewBox: "0 0 12 11",
@@ -446,14 +446,14 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
       s("path", {
         d: "M9.14468 9.01679H12V10.219H7.94245L9.14468 9.01679ZM1.6307 10.219L0.353317 8.94165C0.122888 8.71122 0.0051692 8.42569 0.000159872 8.08505C-0.00484945 7.74442 0.10786 7.45388 0.338289 7.21343L6.9506 0.360671C7.18103 0.120224 7.46406 0 7.79968 0C8.1353 0 8.41833 0.115214 8.64876 0.345643L11.6393 3.33621C11.8698 3.56664 11.985 3.85217 11.985 4.19281C11.985 4.53344 11.8698 4.81897 11.6393 5.0494L6.58993 10.219H1.6307ZM6.07898 9.01679L10.7978 4.17778L7.82222 1.20224L1.17986 8.055L2.14165 9.01679H6.07898Z",
         fill: l.value
-      }, null, 8, z1)
+      }, null, 8, $1)
     ], 8, Z1));
   }
 }), x1 = {
   install(o) {
-    o.component("rtx-erase", $1);
+    o.component("rtx-erase", z1);
   }
-}, B1 = ["width", "height", "fill"], P1 = ["fill"], y1 = /* @__PURE__ */ n({
+}, B1 = ["width", "height", "fill"], P1 = ["fill"], k1 = /* @__PURE__ */ n({
   __name: "Menu",
   props: {
     size: { default: 12 },
@@ -461,7 +461,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size,
       height: t.size * 0.67,
       viewBox: "0 0 18 12",
@@ -476,9 +476,9 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   }
 }), D1 = {
   install(o) {
-    o.component("rtx-menu", y1);
+    o.component("rtx-menu", k1);
   }
-}, A1 = ["width", "height"], R1 = ["fill"], k1 = ["fill"], E1 = /* @__PURE__ */ n({
+}, j1 = ["width", "height"], y1 = ["fill"], A1 = ["fill"], R1 = /* @__PURE__ */ n({
   __name: "Compare",
   props: {
     size: { default: 12 },
@@ -486,7 +486,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size,
       height: t.size * 0.79,
       viewBox: "0 0 12 10",
@@ -496,18 +496,18 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
       s("path", {
         d: "M9.0982 2.18183H4V3.63638H9.0982V5.8182L12 2.9091L9.0982 0V2.18183Z",
         fill: l.value
-      }, null, 8, R1),
+      }, null, 8, y1),
       s("path", {
         d: "M2.9018 7.27234L8 7.27234L8 5.81779L2.9018 5.81779L2.9018 3.63596L-2.74022e-05 6.54506L2.9018 9.45416L2.9018 7.27234Z",
         fill: l.value
-      }, null, 8, k1)
-    ], 8, A1));
+      }, null, 8, A1)
+    ], 8, j1));
   }
-}), U1 = {
+}), E1 = {
   install(o) {
-    o.component("rtx-compare", E1);
+    o.component("rtx-compare", R1);
   }
-}, j1 = ["width", "height"], b1 = ["fill"], S1 = /* @__PURE__ */ n({
+}, U1 = ["width", "height"], b1 = ["fill"], S1 = /* @__PURE__ */ n({
   __name: "User",
   props: {
     size: { default: 12 },
@@ -515,7 +515,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size,
       height: t.size,
       viewBox: "0 0 12 12",
@@ -526,7 +526,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
         d: "M6 1.5C6.825 1.5 7.5 2.175 7.5 3C7.5 3.825 6.825 4.5 6 4.5C5.175 4.5 4.5 3.825 4.5 3C4.5 2.175 5.175 1.5 6 1.5ZM6 9C8.025 9 10.35 9.9675 10.5 10.5H1.5C1.6725 9.96 3.9825 9 6 9ZM6 0C4.3425 0 3 1.3425 3 3C3 4.6575 4.3425 6 6 6C7.6575 6 9 4.6575 9 3C9 1.3425 7.6575 0 6 0ZM6 7.5C3.9975 7.5 0 8.505 0 10.5V12H12V10.5C12 8.505 8.0025 7.5 6 7.5Z",
         fill: l.value
       }, null, 8, b1)
-    ], 8, j1));
+    ], 8, U1));
   }
 }), T1 = {
   install(o) {
@@ -540,7 +540,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size,
       height: t.size,
       viewBox: "0 0 12 12",
@@ -569,7 +569,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size,
       height: t.size * 0.91,
       viewBox: "0 0 12 11",
@@ -594,7 +594,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size,
       height: t.size * 0.17,
       viewBox: "0 0 12 2",
@@ -619,7 +619,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size,
       height: t.size * 0.92,
       viewBox: "0 0 12 11",
@@ -636,7 +636,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   install(o) {
     o.component("rtx-print", e2);
   }
-}, n2 = ["width", "height"], i2 = ["fill"], C2 = /* @__PURE__ */ n({
+}, n2 = ["width", "height"], i2 = ["fill"], r2 = /* @__PURE__ */ n({
   __name: "Info",
   props: {
     size: { default: 12 },
@@ -644,7 +644,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size,
       height: t.size,
       viewBox: "0 0 12 12",
@@ -657,9 +657,9 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
       }, null, 8, i2)
     ], 8, n2));
   }
-}), r2 = {
+}), C2 = {
   install(o) {
-    o.component("rtx-info", C2);
+    o.component("rtx-info", r2);
   }
 }, c2 = ["width", "height"], h2 = ["fill"], u2 = ["fill"], a2 = ["fill"], _2 = /* @__PURE__ */ n({
   __name: "Duplicate",
@@ -669,7 +669,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size,
       height: t.size,
       viewBox: "0 0 12 12",
@@ -694,7 +694,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   install(o) {
     o.component("rtx-duplicate", _2);
   }
-}, p2 = ["width", "height"], f2 = ["fill"], w2 = /* @__PURE__ */ n({
+}, p2 = ["width", "height"], w2 = ["fill"], f2 = /* @__PURE__ */ n({
   __name: "Activation",
   props: {
     size: { default: 12 },
@@ -702,7 +702,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size,
       height: t.size,
       viewBox: "0 0 12 12",
@@ -712,12 +712,12 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
       s("path", {
         d: "M6.66667 0H5.33333V6.66667H6.66667V0ZM9.88667 1.44667L8.94 2.39333C9.99333 3.24 10.6667 4.54 10.6667 6C10.6667 8.58 8.58 10.6667 6 10.6667C3.42 10.6667 1.33333 8.58 1.33333 6C1.33333 4.54 2.00667 3.24 3.05333 2.38667L2.11333 1.44667C0.82 2.54667 0 4.17333 0 6C0 9.31333 2.68667 12 6 12C9.31333 12 12 9.31333 12 6C12 4.17333 11.18 2.54667 9.88667 1.44667Z",
         fill: l.value
-      }, null, 8, f2)
+      }, null, 8, w2)
     ], 8, p2));
   }
 }), g2 = {
   install(o) {
-    o.component("rtx-activation", w2);
+    o.component("rtx-activation", f2);
   }
 }, H2 = ["width", "height"], v2 = ["fill"], V2 = ["fill"], m2 = /* @__PURE__ */ n({
   __name: "End",
@@ -727,7 +727,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size,
       height: t.size,
       viewBox: "0 0 12 12",
@@ -748,7 +748,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   install(o) {
     o.component("rtx-end", m2);
   }
-}, M2 = ["width", "height", "fill"], Z2 = ["fill"], z2 = /* @__PURE__ */ n({
+}, M2 = ["width", "height", "fill"], Z2 = ["fill"], $2 = /* @__PURE__ */ n({
   __name: "Dropdown",
   props: {
     size: { default: 12 },
@@ -756,7 +756,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size,
       height: t.size * 0.67,
       viewBox: "0 0 12 8",
@@ -769,9 +769,9 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
       }, null, 8, Z2)
     ], 8, M2));
   }
-}), $2 = {
+}), z2 = {
   install(o) {
-    o.component("rtx-dropdown", z2);
+    o.component("rtx-dropdown", $2);
   }
 }, x2 = ["width", "height", "fill"], B2 = ["fill"], P2 = /* @__PURE__ */ n({
   __name: "Sales",
@@ -781,7 +781,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size * 0.83,
       height: t.size,
       viewBox: "0 0 10 12",
@@ -796,11 +796,11 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
       }, null, 8, B2)
     ], 8, x2));
   }
-}), y2 = {
+}), k2 = {
   install(o) {
     o.component("rtx-sales", P2);
   }
-}, D2 = ["width", "height", "fill"], A2 = ["fill"], R2 = /* @__PURE__ */ n({
+}, D2 = ["width", "height", "fill"], j2 = ["fill"], y2 = /* @__PURE__ */ n({
   __name: "Cost",
   props: {
     size: { default: 12 },
@@ -808,7 +808,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size * 0.92,
       height: t.size,
       viewBox: "0 0 11 12",
@@ -820,14 +820,14 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
         "clip-rule": "evenodd",
         d: "M10.9027 4.125V10.125C10.9027 10.4234 10.7841 10.7095 10.5732 10.9205C10.3622 11.1315 10.076 11.25 9.77766 11.25H3.77541C3.62764 11.25 3.48131 11.221 3.34477 11.1645C3.20824 11.108 3.08418 11.0251 2.97967 10.9206C2.87517 10.8162 2.79226 10.6921 2.7357 10.5556C2.67914 10.4191 2.65003 10.2728 2.65003 10.125V7.4505C2.83266 7.48313 3.02091 7.5 3.21253 7.5C4.97241 7.5 6.40116 6.07163 6.40116 4.3125C6.40116 2.55338 4.97241 1.125 3.21291 1.125C3.11616 1.125 3.02016 1.1295 2.92566 1.13775C3.03128 1.01586 3.16191 0.918136 3.30867 0.851229C3.45543 0.784321 3.61487 0.749796 3.77616 0.750001H7.52728V3C7.52728 3.29837 7.64581 3.58452 7.85679 3.7955C8.06777 4.00647 8.35392 4.125 8.65228 4.125H10.9027ZM4.90116 9.375V9C4.90116 8.90054 4.86165 8.80516 4.79132 8.73484C4.721 8.66451 4.62561 8.625 4.52616 8.625C4.4267 8.625 4.33132 8.66451 4.26099 8.73484C4.19067 8.80516 4.15116 8.90054 4.15116 9V9.375C4.15116 9.47446 4.19067 9.56984 4.26099 9.64017C4.33132 9.71049 4.4267 9.75 4.52616 9.75C4.62561 9.75 4.721 9.71049 4.79132 9.64017C4.86165 9.56984 4.90116 9.47446 4.90116 9.375ZM6.40191 9.375V7.875C6.40191 7.77554 6.3624 7.68016 6.29207 7.60984C6.22175 7.53951 6.12637 7.5 6.02691 7.5C5.92745 7.5 5.83207 7.53951 5.76174 7.60984C5.69142 7.68016 5.65191 7.77554 5.65191 7.875V9.375C5.65191 9.47446 5.69142 9.56984 5.76174 9.64017C5.83207 9.71049 5.92745 9.75 6.02691 9.75C6.12637 9.75 6.22175 9.71049 6.29207 9.64017C6.3624 9.56984 6.40191 9.47446 6.40191 9.375ZM7.90191 9.375V8.25C7.90191 8.15054 7.8624 8.05516 7.79207 7.98484C7.72175 7.91451 7.62637 7.875 7.52691 7.875C7.42745 7.875 7.33207 7.91451 7.26174 7.98484C7.19142 8.05516 7.15191 8.15054 7.15191 8.25V9.375C7.15191 9.47446 7.19142 9.56984 7.26174 9.64017C7.33207 9.71049 7.42745 9.75 7.52691 9.75C7.62637 9.75 7.72175 9.71049 7.79207 9.64017C7.8624 9.56984 7.90191 9.47446 7.90191 9.375ZM9.40266 9.375V6.75C9.40266 6.65054 9.36315 6.55516 9.29282 6.48484C9.2225 6.41451 9.12712 6.375 9.02766 6.375C8.9282 6.375 8.83282 6.41451 8.76249 6.48484C8.69217 6.55516 8.65266 6.65054 8.65266 6.75V9.375C8.65266 9.47446 8.69217 9.56984 8.76249 9.64017C8.83282 9.71049 8.9282 9.75 9.02766 9.75C9.12712 9.75 9.2225 9.71049 9.29282 9.64017C9.36315 9.56984 9.40266 9.47446 9.40266 9.375ZM8.27766 0.757126C8.54865 0.78812 8.79917 0.916445 8.98266 1.11825L10.6105 2.90813C10.732 3.04238 10.819 3.2025 10.8652 3.375H8.65266C8.60337 3.37515 8.55454 3.36555 8.50898 3.34676C8.46341 3.32797 8.42201 3.30035 8.38716 3.2655C8.35231 3.23065 8.32469 3.18925 8.3059 3.14368C8.28711 3.09812 8.27751 3.04929 8.27766 3V0.757126ZM5.62191 4.6875C5.532 5.26195 5.2399 5.7854 4.79822 6.16354C4.35655 6.54169 3.79435 6.74967 3.21291 6.75C2.56647 6.7497 1.94657 6.49282 1.4894 6.03579C1.03222 5.57876 0.775155 4.95894 0.774658 4.3125C0.775111 3.73102 0.983234 3.16881 1.36152 2.7272C1.73981 2.28559 2.26339 1.99361 2.83791 1.90388V3.9375C2.83791 4.13641 2.91693 4.32718 3.05758 4.46783C3.19823 4.60848 3.389 4.6875 3.58791 4.6875H5.62191ZM3.58791 1.90388C4.09866 1.98373 4.57087 2.22369 4.93649 2.58917C5.3021 2.95465 5.54224 3.42678 5.62228 3.9375H3.58791V1.90388Z",
         fill: l.value
-      }, null, 8, A2)
+      }, null, 8, j2)
     ], 8, D2));
   }
-}), k2 = {
+}), A2 = {
   install(o) {
-    o.component("rtx-cost", R2);
+    o.component("rtx-cost", y2);
   }
-}, E2 = ["width", "height", "fill"], U2 = ["fill"], j2 = ["fill"], b2 = /* @__PURE__ */ n({
+}, R2 = ["width", "height", "fill"], E2 = ["fill"], U2 = ["fill"], b2 = /* @__PURE__ */ n({
   __name: "Adjustment",
   props: {
     size: { default: 12 },
@@ -835,7 +835,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size * 0.83,
       height: t.size,
       viewBox: "0 0 10 12",
@@ -845,12 +845,12 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
       s("path", {
         d: "M0.429688 0.351562V9.53906C0.429688 9.73338 0.58693 9.89062 0.78125 9.89062H7.10938C7.3037 9.89062 7.46094 9.73338 7.46094 9.53906V0.351562C7.46094 0.157242 7.3037 0 7.10938 0H0.78125C0.58693 0 0.429688 0.157242 0.429688 0.351562ZM6.05469 8.10938H4.64844C4.45412 8.10938 4.29688 7.95213 4.29688 7.75781C4.29688 7.56349 4.45412 7.40625 4.64844 7.40625H6.05469C6.24901 7.40625 6.40625 7.56349 6.40625 7.75781C6.40625 7.95213 6.24901 8.10938 6.05469 8.10938ZM1.83594 1.78125H3.94531C4.13963 1.78125 4.29688 1.93849 4.29688 2.13281C4.29688 2.32713 4.13963 2.48438 3.94531 2.48438H1.83594C1.64162 2.48438 1.48438 2.32713 1.48438 2.13281C1.48438 1.93849 1.64162 1.78125 1.83594 1.78125ZM1.83594 3.1875H6.05469C6.24901 3.1875 6.40625 3.34474 6.40625 3.53906C6.40625 3.73338 6.24901 3.89062 6.05469 3.89062H1.83594C1.64162 3.89062 1.48438 3.73338 1.48438 3.53906C1.48438 3.34474 1.64162 3.1875 1.83594 3.1875ZM1.83594 4.59375H6.05469C6.24901 4.59375 6.40625 4.75099 6.40625 4.94531C6.40625 5.13963 6.24901 5.29688 6.05469 5.29688H1.83594C1.64162 5.29688 1.48438 5.13963 1.48438 4.94531C1.48438 4.75099 1.64162 4.59375 1.83594 4.59375ZM1.83594 6H6.05469C6.24901 6 6.40625 6.15724 6.40625 6.35156C6.40625 6.54588 6.24901 6.70312 6.05469 6.70312H1.83594C1.64162 6.70312 1.48438 6.54588 1.48438 6.35156C1.48438 6.15724 1.64162 6 1.83594 6Z",
         fill: l.value
-      }, null, 8, U2),
+      }, null, 8, E2),
       s("path", {
         d: "M2.89062 12H9.21875C9.41307 12 9.57031 11.8428 9.57031 11.6484V2.48438C9.57031 2.29005 9.41307 2.13281 9.21875 2.13281H8.16406V9.53906C8.16406 10.1206 7.69095 10.5938 7.10938 10.5938H2.53906V11.6484C2.53906 11.8428 2.6963 12 2.89062 12Z",
         fill: l.value
-      }, null, 8, j2)
-    ], 8, E2));
+      }, null, 8, U2)
+    ], 8, R2));
   }
 }), S2 = {
   install(o) {
@@ -864,7 +864,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size * 0.83,
       height: t.size,
       viewBox: "0 0 10 12",
@@ -891,7 +891,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size,
       height: t.size,
       viewBox: "0 0 12 12",
@@ -916,7 +916,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size * 0.25,
       height: t.size,
       viewBox: "0 0 3 12",
@@ -941,7 +941,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size,
       height: t.size,
       viewBox: "0 0 12 12",
@@ -966,7 +966,7 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   },
   setup(o) {
     const e = o, l = i(() => e.color || "currentColor");
-    return (t, c) => (r(), C("svg", {
+    return (t, c) => (C(), r("svg", {
       width: t.size,
       height: t.size,
       viewBox: "0 0 11 11",
@@ -983,11 +983,74 @@ const h = ["width", "height", "fill"], u = ["fill"], a = /* @__PURE__ */ n({
   install(o) {
     o.component("rtx-upload", n6);
   }
-}, r6 = {
+}, r6 = ["width", "height"], C6 = ["stroke"], c6 = ["stroke"], h6 = ["stroke"], u6 = ["stroke"], a6 = ["stroke"], _6 = ["stroke"], d6 = /* @__PURE__ */ n({
+  __name: "DateRange",
+  props: {
+    size: { default: 12 },
+    color: {}
+  },
+  setup(o) {
+    const e = o, l = i(() => e.color || "currentColor");
+    return (t, c) => (C(), r("svg", {
+      width: t.size,
+      height: t.size,
+      viewBox: "0 0 14 15",
+      fill: "transparent",
+      xmlns: "http://www.w3.org/2000/svg"
+    }, [
+      s("path", {
+        stroke: l.value,
+        d: "M9.21045 11.7368H12.9999",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round"
+      }, null, 8, C6),
+      s("path", {
+        stroke: l.value,
+        d: "M9.21045 1V3.52631",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round"
+      }, null, 8, c6),
+      s("path", {
+        stroke: l.value,
+        d: "M11.1055 9.84204V13.6315",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round"
+      }, null, 8, h6),
+      s("path", {
+        stroke: l.value,
+        d: "M12.3685 7.6936V3.52646C12.3685 3.19145 12.2354 2.87016 11.9985 2.63327C11.7616 2.39639 11.4403 2.26331 11.1053 2.26331H2.26316C1.92815 2.26331 1.60686 2.39639 1.36997 2.63327C1.13308 2.87016 1 3.19145 1 3.52646V12.3685C1 12.7035 1.13308 13.0248 1.36997 13.2617C1.60686 13.4986 1.92815 13.6317 2.26316 13.6317H7.63161",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round"
+      }, null, 8, u6),
+      s("path", {
+        stroke: l.value,
+        d: "M1 6.05261H12.3685",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round"
+      }, null, 8, a6),
+      s("path", {
+        stroke: l.value,
+        d: "M4.15771 1V3.52631",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round"
+      }, null, 8, _6)
+    ], 8, r6));
+  }
+}), p6 = {
+  install(o) {
+    o.component("rtx-date-range", d6);
+  }
+}, f6 = {
   install: (o) => {
-    o.use(_), o.use(w), o.use(V), o.use(Z), o.use(B), o.use(A), o.use(U), o.use(T), o.use(F), o.use(Q), o.use(o1), o.use(s1), o.use(r1), o.use(a1), o.use(f1), o.use(v1), o.use(M1), o.use(x1), o.use(D1), o.use(U1), o.use(T1), o.use(F1), o.use(Q1), o.use(o2), o.use(s2), o.use(r2), o.use(d2), o.use(g2), o.use(L2), o.use($2), o.use(y2), o.use(k2), o.use(S2), o.use(O2), o.use(J2), o.use(X2), o.use(l6), o.use(i6);
+    o.use(_), o.use(f), o.use(V), o.use(Z), o.use(B), o.use(j), o.use(E), o.use(T), o.use(F), o.use(Q), o.use(o1), o.use(s1), o.use(C1), o.use(a1), o.use(w1), o.use(v1), o.use(M1), o.use(x1), o.use(D1), o.use(E1), o.use(T1), o.use(F1), o.use(Q1), o.use(o2), o.use(s2), o.use(C2), o.use(d2), o.use(g2), o.use(L2), o.use(z2), o.use(k2), o.use(A2), o.use(S2), o.use(O2), o.use(J2), o.use(X2), o.use(l6), o.use(i6), o.use(p6);
   }
 };
 export {
-  r6 as default
+  f6 as default
 };
